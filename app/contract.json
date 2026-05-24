@@ -1,0 +1,245 @@
+{
+  "contractAddress": "0x34Fe9dE2D2B37C7753Feff94Bd193730Fc54Aa08",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "string",
+          "name": "fileId",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "deactivator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "FileDeactivated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "string",
+          "name": "fileId",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "sha256Hash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "uploader",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "FileRegistered",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "fileId",
+          "type": "string"
+        }
+      ],
+      "name": "deactivateFile",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "sha256HashHex",
+          "type": "string"
+        }
+      ],
+      "name": "findFileByHash",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "fileId",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "fileId",
+          "type": "string"
+        }
+      ],
+      "name": "getFileInfo",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "id",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "sha256HashHex",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "fileType",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fileSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "uploader",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "uploader",
+          "type": "address"
+        }
+      ],
+      "name": "getFilesByUploader",
+      "outputs": [
+        {
+          "internalType": "string[]",
+          "name": "",
+          "type": "string[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalFiles",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "sha256HashHex",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "fileName",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "fileType",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fileSize",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "description",
+          "type": "string"
+        }
+      ],
+      "name": "registerFile",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "fileId",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "network": "sepolia",
+  "chainId": 11155111,
+  "deployedAt": "2026-05-11T00:00:00.000Z"
+}
