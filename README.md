@@ -52,6 +52,11 @@ Sử dụng FileID, bất kỳ ai cũng có thể tra cứu xem file được l�
 ### Xác thực toàn vẹn (Verify)
 Để kiểm tra một file (ví dụ hợp đồng hay văn bằng) có bị sửa đổi hay không, người dùng tải file đó lên giao diện Xác thực. Hệ thống sẽ băm file và đối chiếu với hash gốc đang được lưu trữ trên blockchain để đưa ra kết quả khớp (toàn vẹn) hay không khớp (bị chỉnh sửa). 
 
+<div align="center">
+  <img src="Poster_VU_DINH_QUAN.pdf" width="600" height="auto"/>
+  <p><b>Giao diện Trang chủ (Tổng quan)</b></p>
+</div>
+
 ## 2. Các công nghệ được sử dụng
 <div align="center">
 
