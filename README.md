@@ -54,7 +54,7 @@ Sử dụng FileID, bất kỳ ai cũng có thể tra cứu xem file được l�
 
 <div align="center">
   <img src="docs/Poster_VU_DINH_QUAN.png" width="600" height="auto"/>
-  <p><b>Giao diện Trang chủ (Tổng quan)</b></p>
+  <p><b>Poster</b></p>
 </div>
 
 ## 2. Các công nghệ được sử dụng
